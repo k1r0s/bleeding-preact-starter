@@ -1,0 +1,27 @@
+{
+  "name": "bleeding-frontend-starter",
+  "version": "1.0.0",
+  "description": "Tiny starter with bleeding dependencies to enjoy frontend development",
+  "main": "none",
+  "scripts": {
+    "build": "webpack",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack-dev-server --inline --hot --progress --content-base public"
+  },
+  "keywords": ["starter", "frontend", "preact", "redux", "typescript"],
+  "author": "k1r0s",
+  "license": "MIT",
+  "dependencies": {
+    "http-decorator": "^0.1.1",
+    "preact": "~8.2.6",
+    "preact-routlet": "^0.1.7",
+    "redux-zero": "^4.4.2",
+    "stylesheet-decorator": "^1.1.5",
+    "typescript": "~2.5.3"
+  },
+  "devDependencies": {
+    "awesome-typescript-loader": "~3.2.3",
+    "webpack": "~3.8.1",
+    "webpack-dev-server": "~2.9.3"
+  }
+}
