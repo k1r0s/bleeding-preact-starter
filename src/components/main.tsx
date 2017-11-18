@@ -45,7 +45,9 @@ class NavBar extends Component<any, any> {
     this.setState({ allowed: err ? 0 : result.allowed })
   }
 
-  @stylesheet(`nav * { padding: 5px }`)
+  @stylesheet(`
+      a { padding: 5px; text-decoration: none; }
+    `)
   render() {
     return (
       <nav>
