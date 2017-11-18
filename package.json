@@ -12,7 +12,7 @@
   "author": "k1r0s",
   "license": "MIT",
   "dependencies": {
-    "http-decorator": "^0.1.1",
+    "http-decorator": "^1.0.0",
     "preact": "~8.2.6",
     "preact-routlet": "^0.1.7",
     "redux-zero": "^4.4.2",
