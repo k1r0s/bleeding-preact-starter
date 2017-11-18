@@ -8,11 +8,17 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "webpack-dev-server --inline --hot --progress --content-base public"
   },
-  "keywords": ["starter", "frontend", "preact", "redux", "typescript"],
+  "keywords": [
+    "starter",
+    "frontend",
+    "preact",
+    "redux",
+    "typescript"
+  ],
   "author": "k1r0s",
   "license": "MIT",
   "dependencies": {
-    "http-decorator": "^1.0.0",
+    "http-decorator": "^1.0.5",
     "preact": "~8.2.6",
     "preact-routlet": "^0.1.7",
     "redux-zero": "^4.4.2",
