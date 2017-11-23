@@ -1,8 +1,14 @@
 import { h, Component } from "preact";
 
+export interface BindGroupChange {
+  name: string,
+  value: any
+}
+
 export default class BindGroup extends Component<any, any> {
 
   private static bindAttrName = "data-bind";
+  private static bindAttrEvent = "data-event";
   private static watchHandlerAttrName = "watch";
 
   private static createChangeReport = (child: JSX.Element, { target }) => {
@@ -16,7 +22,7 @@ export default class BindGroup extends Component<any, any> {
 
   private static mapChildren = (child: JSX.Element, cbk: Function) => {
     if (child.attributes instanceof Object && child.attributes[BindGroup.bindAttrName]) {
-      child.attributes = { onChange: (evt: Event) => cbk.call(null, BindGroup.createChangeReport(child, evt), evt), name: child.attributes[BindGroup.bindAttrName], ...child.attributes }
+      child.attributes = { [child.attributes[BindGroup.bindAttrEvent] || 'onChange']: (evt: Event) => cbk.call(null, BindGroup.createChangeReport(child, evt), evt), name: child.attributes[BindGroup.bindAttrName], ...child.attributes }
     } else if (child.children instanceof Array && child.children.length) {
       child.children = child.children.map(child => BindGroup.mapChildren(child, cbk));
     }

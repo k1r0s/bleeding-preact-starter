@@ -1,12 +1,13 @@
 import * as createStore from "redux-zero";
+import { BindGroupChange } from "./common/bind-group";
 
 const store = (createStore as any)({
-  profile: {
-    name: "default"
-  },
+  profile: {},
   items: []
 });
 
-export const setProfileName = (state, { target }) => ({ profile: { name: target.value } })
+export const updateForm = ({ profile }, change: BindGroupChange) => ({
+  profile: { ...profile, [change.name]: change.value }
+})
 
 export default store
