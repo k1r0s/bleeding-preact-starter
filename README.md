@@ -16,3 +16,7 @@ Features:
 > `common` folder contain some utilities like Connect decorator for redux-zero (which is not yet included on the lib) and bind-group component which is handy grouping form controls state.
 
 Powered by [Webpack](https://github.com/webpack/webpack)
+
+#### Heading production env -> Polyfills, Shims & Extensions
+
+I recommend to install core-js and import all its contents on your main file `import 'core-js'`

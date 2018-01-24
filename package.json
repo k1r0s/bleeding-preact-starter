@@ -5,6 +5,7 @@
   "main": "none",
   "scripts": {
     "build": "webpack",
+    "prod": "webpack -p",
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "webpack-dev-server --inline --hot --progress --content-base public"
   },
@@ -18,11 +19,11 @@
   "author": "k1r0s",
   "license": "MIT",
   "dependencies": {
-    "http-decorator": "^1.0.5",
-    "preact": "~8.2.6",
-    "preact-routlet": "^0.1.7",
+    "http-decorator": "^1.0.10",
+    "preact": "^8.2.7",
+    "preact-routlet": "^0.2.1",
     "redux-zero": "^4.4.2",
-    "stylesheet-decorator": "^1.1.5",
+    "stylesheet-decorator": "^1.4.1",
     "typescript": "~2.5.3"
   },
   "devDependencies": {
