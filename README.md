@@ -12,8 +12,9 @@ Features:
 - [Preact-Routlet](https://github.com/k1r0s/preact-routlet) Simple Component drive Routing
 - [Http-Decorator](https://github.com/k1r0s/http-decorator) Wrap your components with axios, no more async management
 - [Preact-Stylesheet-Decorator](https://github.com/k1r0s/preact-stylesheet-decorator) Wrap your components with scoped css
+- [Preact-Bind-Group](https://github.com/k1r0s/preact-bind-group) Group Form fields onChange Events to a single Callback
 
-> `common` folder contain some utilities like Connect decorator for redux-zero (which is not yet included on the lib) and bind-group component which is handy grouping form controls state.
+> `common` folder contains Connect decorator for redux-zero (which is not yet included on the lib)
 
 Powered by [Webpack](https://github.com/webpack/webpack)
 
