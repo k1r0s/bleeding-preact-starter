@@ -1,7 +1,7 @@
 import { h, Component } from "preact";
 import { Link, renderOnRoute, RouterOutlet } from "preact-routlet"
 import connect from "../common/connect";
-import BindGroup from "../common/bind-group";
+import BindGroup from "preact-bind-group";
 import { updateForm } from "../store";
 import { Provider } from "redux-zero/preact";
 import appStore from "../store";

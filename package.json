@@ -19,9 +19,10 @@
   "author": "k1r0s",
   "license": "MIT",
   "dependencies": {
-    "http-decorator": "^1.0.10",
-    "preact": "^8.2.7",
-    "preact-routlet": "^0.2.1",
+    "http-decorator": "^1.0.5",
+    "preact": "~8.2.6",
+    "preact-bind-group": "0.0.2",
+    "preact-routlet": "^0.1.7",
     "redux-zero": "^4.4.2",
     "stylesheet-decorator": "^1.4.1",
     "typescript": "~2.5.3"
